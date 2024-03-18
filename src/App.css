@@ -1,0 +1,56 @@
+.containerb {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.headerShadow {
+  border-right: 2px solid white;
+}
+.headerShadow nav .active {
+  width: 100%;
+  background-color: royalblue;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 50px;
+  background: #6d6d6d;
+  outline: none;
+  overflow: hidden;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::before{
+  height: 40px;
+  content: "";
+  position: absolute;
+  background-color: red;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height:20px;
+  background: #1500ff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #01f40a;
+  cursor: pointer;
+}

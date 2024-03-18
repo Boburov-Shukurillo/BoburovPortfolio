@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.containerb {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.myFont {
+  font-family: "Courier New", Courier, monospace;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scroll-behavior: smooth;
+}
