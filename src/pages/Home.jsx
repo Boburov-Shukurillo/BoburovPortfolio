@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { projects } from "../data";
 import About from "./About";
 import sertifikat from "../assets/sertificat/Sertificat.png";
 import htmlIcon from "../assets/html.png";
 import gitIcon from "../assets/github.png";
 import netlifyIcon from "../assets/netlify_logo_icon.png";
+import Aos, { AOS } from "aos";
+import "aos/dist/aos.css";
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ duration: "1000" });
+  }, []);
   return (
     <div>
       <About />
@@ -15,6 +20,7 @@ const Home = () => {
             {projects.map((project) => {
               return (
                 <li
+                  data-aos="zoom-in"
                   key={project.id}
                   className="h-450px rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
                 >

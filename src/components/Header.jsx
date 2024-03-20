@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Portfolio from "../assets/Boburov.png";
 import telegram from "../assets/telegram.png";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 const Header = () => {
+  useEffect(() => {
+    Aos.init({ duration: "1000" });
+  }, []);
   return (
     <header className="bg-slate-700 py-3">
       <div className=" containerb flex items-center justify-between">
         <img
           src={Portfolio}
+          data-aos="flip-up"
           className="h-16  mix-blend-lighten"
           alt="Portfolio img"
         />

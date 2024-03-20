@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PortfolioImg from "../assets/photo.png";
 import email from "../assets/email.png";
 import telegram from "../assets/telegram.png";
 import GitHub from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instalog.png";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: "1000" });
+  }, []);
   const [blur, setBlur] = useState("");
   return (
-    <div className="py-20" id="home">
+    <div className="py-20" id="home" data-aos="zoom-in">
       <div className=" containerb flex items-center justify-between">
         <div className="w-full">
           <h1 className="text-6xl font-bold myFont text-white mb-9 ">
