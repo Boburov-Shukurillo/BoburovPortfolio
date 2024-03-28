@@ -36,8 +36,8 @@ const Header = () => {
           </nav>
 
           <a
-            className="px-4 py-2 rounded-xl border-2 flex items-center gap-x-5 text-white font-bold hover:opacity-60 transition-all max-md:px-2 max-md:py-2  max-md:text-sm"
             href="https://t.me/BoburovSh"
+            className="px-4 py-2 rounded-xl border-2 flex items-center gap-x-5 text-white font-bold hover:opacity-60 transition-all max-md:px-2 max-md:py-2  max-md:text-sm"
           >
             <img
               src={telegram}
