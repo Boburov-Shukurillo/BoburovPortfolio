@@ -7,6 +7,7 @@ import gitIcon from "../assets/github.png";
 import netlifyIcon from "../assets/netlify_logo_icon.png";
 import Aos, { AOS } from "aos";
 import "aos/dist/aos.css";
+import Skils from "./Skils";
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: "1000" });
@@ -64,28 +65,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="containerb flex flex-col">
-        <div className="grid grid-cols-2 py-20">
-          <img src={sertifikat} alt="sertifikat" className="w-500" />
-          <div className="w-full h-full">
-            <h1 className="text-4xl font-bold text-white text-center">
-              Sertificat for Figma
-            </h1>
-          </div>
-        </div>
-        <div className="grid grid-cols-2 pb-20">
-          <div className="w-full h-full p-20">
-            <h1 className="text-4xl font-bold text-white text-center">
-              Sertificat for Programming
-            </h1>
-          </div>
-          <img src={sertifikat} alt="sertifikat" className="w-500" />
-        </div>
-      </div>
-
-      <div className="w-full bg-slate-500 " id="skils">
-        <div className="w-full h-24"></div>
-      </div>
+      
+      <Skils/>
     </div>
   );
 };

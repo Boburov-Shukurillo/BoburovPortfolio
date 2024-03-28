@@ -3,6 +3,9 @@ import FlappyBird from "./assets/icons/flappyBird.png";
 import Restoran from "./assets/icons/restoran.png";
 import PintApp from "./assets/icons/PaintApp.png";
 import RockPeaperGame from "./assets/icons/RockPeaperGame.png";
+import MazeGame from "./assets/icons/mazeGame.png";
+import TextToSpeach from "./assets/icons/textspeach.png";
+import QrCode from "./assets/icons/qrcodereader.png";
 export const projects = [
   {
     id: 0,
@@ -53,5 +56,25 @@ export const projects = [
     usingLanguage: ["html", "css", "js"],
     gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
     netlify: "",
+  },
+  {
+    id: 5,
+    img: MazeGame,
+    projectName: "Maze Game",
+    description:
+      "This Project Craeated in 3 day and I Learned Javascript Canvas!",
+    usingLanguage: ["html", "css", "js"],
+    gitHb: "https://github.com/Boburov-Shukurillo/Maze-game",
+    netlify: "https://maze-game-crator-boburov.netlify.app/",
+  },
+  {
+    id: 6,
+    img: TextToSpeach,
+    projectName: "Text To Speach",
+    description:
+      "This Project Craeated in 3 day and I Learned Javascript Canvas!",
+    usingLanguage: ["html", "css", "js"],
+    gitHb: "https://github.com/Boburov-Shukurillo/Text-To-Speach",
+    netlify: "https://boburov-text-to-speach.netlify.app/",
   },
 ];
