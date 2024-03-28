@@ -47,9 +47,9 @@ const Header = () => {
             <span className="max-md:hidden">Telegram</span>
           </a>
         </div>
-        <button className="hidden max-sm:block">
+        {/* <button className="hidden max-sm:block">
           <img src={hamburgerBtn} className="w-20" alt="" />
-        </button>
+        </button> */}
 
         
       </div>
