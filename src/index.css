@@ -15,6 +15,17 @@
 *::-webkit-scrollbar {
   display: none;
 }
+
+@font-face {
+  font-family: zingDemo;
+  src: url(./fonFamily/ZingRust.ttf);
+}
+
 * {
   scroll-behavior: smooth;
+}
+
+.ZingDemo {
+  letter-spacing: 2px;
+  font-family: zingDemo;
 }

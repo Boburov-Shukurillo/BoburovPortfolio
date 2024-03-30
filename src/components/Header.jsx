@@ -1,23 +1,26 @@
 import React, { useEffect } from "react";
-import Portfolio from "../assets/Boburov.png";
+import Portfolio from "../assets/logo.svg";
 import telegram from "../assets/telegram.png";
 import hamburgerBtn from "../assets/hamburgerBtn.svg";
-import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   useEffect(() => {
     Aos.init({ duration: "1000" });
   }, []);
   return (
-    <header className="bg-slate-700 py-3">
+    <header className="bg-slate-700 py-3 ZingDemo">
       <div className=" containerb flex items-center justify-between">
-        <img
-          src={Portfolio}
-          data-aos="flip-up"
-          className="h-16  mix-blend-lighten max-md:w-24 max-md:h-10"
-          alt="Portfolio img"
-        />
+        <Link className="flex items-center justify-between w-full gap-x-5">
+          <img
+            src={Portfolio}
+            data-aos="flip-up"
+            className="h-20 max-md:w-24 max-md:h-10"
+            alt="Portfolio img"
+          />
+          <h1 className="ZingDemo w-full text-white text-3xl">Boburov Shukurillo</h1>
+        </Link>
         <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
           <nav className="w-1/4 max-md:hidden">
             <ul className="flex items-center justify-end gap-x-10 text-white font-bold">
@@ -47,11 +50,9 @@ const Header = () => {
             <span className="max-md:hidden">Telegram</span>
           </a>
         </div>
-        {/* <button className="hidden max-sm:block">
+        <button className="hidden max-sm:block">
           <img src={hamburgerBtn} className="w-20" alt="" />
-        </button> */}
-
-        
+        </button>
       </div>
     </header>
   );

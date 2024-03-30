@@ -6,6 +6,7 @@ import RockPeaperGame from "./assets/icons/RockPeaperGame.png";
 import MazeGame from "./assets/icons/mazeGame.png";
 import TextToSpeach from "./assets/icons/textspeach.png";
 import QrCode from "./assets/icons/qrcodereader.png";
+import shadowFighte from "./assets/icons/shadowFight.png";
 export const projects = [
   {
     id: 0,
@@ -76,5 +77,15 @@ export const projects = [
     usingLanguage: ["html", "css", "js"],
     gitHb: "https://github.com/Boburov-Shukurillo/Text-To-Speach",
     netlify: "https://boburov-text-to-speach.netlify.app/",
+  },
+  {
+    id: 6,
+    img: shadowFighte,
+    projectName: "Shadow Fight Game",
+    description:
+      "This Project Craeated in 3 day and I Learned Javascript Canvas!",
+    usingLanguage: ["html", "css", "js"],
+    gitHb: "https://github.com/Boburov-Shukurillo/Shadow-Fight",
+    netlify: "https://shadowfighte.netlify.app/",
   },
 ];

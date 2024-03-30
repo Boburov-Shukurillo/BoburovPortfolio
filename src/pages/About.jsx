@@ -22,7 +22,7 @@ const About = () => {
           className="w-2/5 h-full rounded-full object-cover max-sm:w-2/3 hidden max-sm:block " 
         />
         <div className="w-full max-md:w-4/5 max-sm:text-center">
-          <h1 className="text-6xl font-bold myFont text-white mb-9 max-lg:text-4xl max-md:text-3xl max-sm:text-xl">
+          <h1 className="ZingDemo text-6xl font-bold myFont text-white mb-9 max-lg:text-4xl max-md:text-3xl max-sm:text-xl">
             Hi 👋 I'm <span>Boburov Shukurillo</span> I'm
             <span className="text-cyan-600"> Frontend React </span> Developer 🧑‍💻
           </h1>
