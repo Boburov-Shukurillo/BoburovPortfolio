@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Portfolio from "../assets/logo.svg";
 import telegram from "../assets/telegram.png";
 import hamburgerBtn from "../assets/hamburgerBtn.svg";
 import Aos from "aos";
