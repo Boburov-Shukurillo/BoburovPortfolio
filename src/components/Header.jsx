@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import telegram from "../assets/telegram.png";
 import hamburgerBtn from "../assets/hamburgerBtn.svg";
+import logo from "../assets/logoDev.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -11,6 +12,12 @@ const Header = () => {
   return (
     <header className="bg-slate-700 py-3 ZingDemo">
       <div className=" containerb flex items-center justify-between">
+        <Link className="flex items-center justify-between w-1/2">
+          <img src={logo} alt="logo" className="w-16 h-16 rounded-lg mr-5"  />
+          <h1 className="h-10 text-2xl text-white w-full leading-5">Boburov Shukurillo <br />
+          <span className="text-xl">Fronten React Developer</span>
+          </h1>
+        </Link>
         <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
           <nav className="w-1/4 max-md:hidden">
             <ul className="flex items-center justify-end gap-x-10 text-white font-bold">

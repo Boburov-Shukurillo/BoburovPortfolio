@@ -16,7 +16,7 @@ export const projects = [
       "This Game is Perfect This game finished in 1.5 days and My logic grow up",
     usingLanguage: ["html", "css", "js"],
     gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
-    netlify: "",
+    netlify: "https://tictactoegame2024.netlify.app/",
   },
   {
     id: 1,
@@ -36,7 +36,7 @@ export const projects = [
       "This Project createrd in 2 week and I learned axios and othet liberies",
     usingLanguage: ["html", "css", "js"],
     gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
-    netlify: "",
+    netlify: "https://restoran-site.netlify.app/",
   },
   {
     id: 3,
