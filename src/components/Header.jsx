@@ -19,8 +19,9 @@ const Header = () => {
             className="h-20 max-md:w-24 max-md:h-10 fill-red-500"
             alt="Portfolio img"
           />
+          <span className="w-0.5 h-16 mx-1 inline-block bg-white"></span>
           <h1 className="ZingDemo w-full text-white text-3xl leading-5 mt-4">
-            Boburov Shukurillo <br /> <span className="text-2xl text-cyan-200">Frontend React Developer</span>
+            Boburov Shukurillo <br /> <span className="text-xl text-gray-300">Frontend React Developer</span>
           </h1>
         </Link>
         <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
