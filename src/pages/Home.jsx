@@ -184,7 +184,7 @@ const Home = () => {
                   <img
                     src={project.img}
                     alt={project.projectName + " png"}
-                    className="hidden max-md:block rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
+                    className="hidden max-md:block rounded-xl w-733 h-96 object-cover object-right max-xl:w-2/3 max-md:w-full max-md:mb-5"
                   />
                   <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
                     <h2
@@ -239,7 +239,7 @@ const Home = () => {
                   <img
                     src={project.img}
                     alt={project.projectName + " png"}
-                    className=" max-md:hidden rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
+                    className=" max-md:hidden rounded-xl w-733 h-96 object-cover object-right max-xl:w-2/3 max-md:w-full max-md:mb-5"
                   />
                 </li>
                 );
