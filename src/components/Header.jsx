@@ -20,6 +20,11 @@ const Header = () => {
   };
 
   const [menu, setMenu] = useState("-left-full");
+  const [top, setTop] = useState(0);
+
+  const upTo = () => {
+    window.scrollTo({ top: top, behavior: "smooth" });
+  };
   return (
     <header>
       <div
@@ -36,24 +41,24 @@ const Header = () => {
           <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
             <nav className="w-1/4 max-mini_screen:hidden">
               <ul className="flex items-center justify-end gap-x-10 text-white font-bold">
-                <li>
-                  <span className="cursor-pointer">
-                    <a href="#home" className="uppercase">Home</a>
+                <li onClick={() => setTop(0)}>
+                  <span onClick={upTo} className="cursor-pointer">
+                    Home
                   </span>
                 </li>
-                <li>
-                  <span className="cursor-pointer">
-                    <a href="#about" className="uppercase">About</a>
+                <li onClick={() => setTop(1300)}>
+                  <span onClick={upTo} className="cursor-pointer">
+                    About
                   </span>
                 </li>
-                <li>
-                  <span className="cursor-pointer">
-                    <a href="#projects" className="uppercase">Projects</a>
+                <li onClick={() => setTop(2000)}>
+                  <span onClick={upTo} className="cursor-pointer">
+                    Projects
                   </span>
                 </li>
-                <li>
-                  <span className="cursor-pointer">
-                    <a href="#contact" className="uppercase">Contact</a>
+                <li onClick={() => setTop(2500)}>
+                  <span onClick={upTo} className="cursor-pointer">
+                    Contact
                   </span>
                 </li>
               </ul>
