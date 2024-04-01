@@ -178,59 +178,70 @@ const Home = () => {
               } else {
                 return (
                   <li
-                    data-aos="fade-in"
-                    key={project.id}
-                    className="flex items-start justify-between gap-x-10 h-96"
-                  >
-                    <div className="w-1/3 flex flex-col items-start justify-center h-full">
-                      <h2 className="text-3xl myFont text-white tracking-widest mb-5">
-                        {project.projectName}
-                      </h2>
-                      <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-justify">
-                        {project.description}
-                      </p>
+                  key={project.id}
+                  className="flex items-start justify-between gap-x-10 h-96 max-md:flex-col max-md:items-center max-md:h-500px"
+                >
+                  <img
+                    src={project.img}
+                    alt={project.projectName + " png"}
+                    className="hidden max-md:block rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
+                  />
+                  <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
+                    <h2
+                      className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl"
+                      data-aos="fade-in"
+                    >
+                      {project.projectName}
+                    </h2>
+                    <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-center max-xl:text-sm max-md:text-xl max-xl:w-full">
+                      {project.description}
+                    </p>
 
-                      <div className="flex flex-wrap gap-5 mb-5">
-                        {project.usingLanguage.map((pl) => {
-                          return (
-                            <h4 className="myFont text-xl text-white">{pl}</h4>
-                          );
-                        })}
-                      </div>
-
-                      <div className="w-full flex items-center justify-center gap-x-5">
-                        <a
-                          href={project.gitHb}
-                          className="text-white flex items-center justify-center gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black"
-                        >
-                          Code
-                          <img
-                            src={gitIcon}
-                            className="w-7"
-                            alt="git hub icon"
-                          />
-                        </a>
-
-                        <a
-                          href={project.netlify}
-                          className="text-white flex items-center justify-center gap-x-2 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black"
-                        >
-                          Live Demo
-                          <img
-                            src={netlifyIcon}
-                            className="w-7"
-                            alt="open demo"
-                          />
-                        </a>
-                      </div>
+                    <div className="flex flex-wrap gap-5 mb-5">
+                      {project.usingLanguage.map((pl, index) => {
+                        return (
+                          <h3
+                            key={index}
+                            className="myFont text-xl text-white tracking-widest max-xl:text-base"
+                          >
+                            #{pl}
+                          </h3>
+                        );
+                      })}
                     </div>
 
-                    <img
-                      src={project.img}
-                      alt={project.projectName + " png"}
-                      className="rounded-xl w-2/3 h-full"
-                    />
-                  </li>
+                    <div className="w-full flex items-center justify-center gap-x-5 max-sm:gap-x-2">
+                      <a
+                        href={project.gitHb}
+                        className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
+                      >
+                        Code
+                        <img
+                          src={gitIcon}
+                          className="w-7"
+                          alt="git hub icon"
+                        />
+                      </a>
+
+                      <a
+                        href={project.netlify}
+                        className="text-white flex items-center justify-evenly gap-x-2 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
+                      >
+                        Live Demo
+                        <img
+                          src={netlifyIcon}
+                          className="w-7"
+                          alt="open demo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <img
+                    src={project.img}
+                    alt={project.projectName + " png"}
+                    className=" max-md:hidden rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
+                  />
+                </li>
                 );
               }
             })}
