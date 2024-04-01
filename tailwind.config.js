@@ -19,6 +19,7 @@ export default {
       colors: {
         skyBlue: "#BFDEFD",
         darkenBlue: "#1D2735",
+        whiteGray: "#C8CBCB",
       },
     },
   },

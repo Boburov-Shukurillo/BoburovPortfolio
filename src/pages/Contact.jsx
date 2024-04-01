@@ -6,7 +6,7 @@ import instagram from "../assets/instalog.png";
 
 const Contact = () => {
   return (
-    <div id="contact" className="bg-slate-700">
+    <div id="contact" className="bg-darkenBlue py-20">
       <div className="containerb">
         <h1 className="myFont text-3xl text-white tracking-widest mb-5">
           Connect With Me

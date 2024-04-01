@@ -36,7 +36,7 @@ const Home = () => {
               Front-End React <br />
               Developer 👋
             </h1>
-            <p className="text-xl text-gray-400 mb-5 myFont w-2/3">
+            <p className="text-xl text-whiteGray mb-5 myFont w-2/3">
               Hi, I'm Boburov Shukurillo. A passionate Frontend React Developer
               based in Chinabod , Uzbekistan📍
             </p>
@@ -44,7 +44,7 @@ const Home = () => {
               <span className="text-xl tracking-widest text-white myFont">
                 Teach Stack
               </span>
-              <span className="inline-block w-0.5 h-10 bg-gray-500"></span>
+              <span className="inline-block w-0.5 h-10 bg-whiteGray"></span>
               <div className="w-1/2 flex justify-start gap-x-10 max-sm:gap-x-1 max-sm:justify-center">
                 <img
                   src={html}
@@ -237,46 +237,44 @@ const Home = () => {
           >
             {games.map((game) => {
               return (
-                <SwiperSlide key={game.id}>
-                  <li
-                    data-aos="fade-in"
-                    key={game.id}
-                    className="h-450px rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
-                  >
-                    <img
-                      src={game.img}
-                      className="w-full h-1/2 object-cover rounded-lg"
-                      alt={game.projectName + " "}
-                    />
-                    <h3 className="text-2xl font-bold">{game.projectName}</h3>
-                    <p className=" font-semibold">{game.description}</p>
-                    <div className="flex justify-between w-full gap-x-7">
-                      <a
-                        target="_blank"
-                        href={game.gitHb}
-                        className="w-full py-3 border-2 rounded-xl bg-slate-900 text-white flex items-center justify-center gap-x-2"
-                      >
-                        <img
-                          src={gitIcon}
-                          className="rounded-full w-7"
-                          alt="github icon"
-                        />
-                        Git Hub
-                      </a>
-                      <a
-                        target="_blank"
-                        href={game.netlify}
-                        className="w-full py-3 border-2 rounded-xl bg-cyan-900 text-white flex items-center justify-center"
-                      >
-                        <img
-                          src={netlifyIcon}
-                          className="w-10"
-                          alt="netlify icon"
-                        />
-                        Netlify
-                      </a>
-                    </div>
-                  </li>
+                <SwiperSlide
+                  data-aos="fade-in"
+                  key={game.id}
+                  className="h-450px rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
+                >
+                  <img
+                    src={game.img}
+                    className="w-full h-1/2 object-cover rounded-lg"
+                    alt={game.projectName + " "}
+                  />
+                  <h3 className="text-2xl font-bold">{game.projectName}</h3>
+                  <p className=" font-semibold">{game.description}</p>
+                  <div className="flex justify-between w-full gap-x-7">
+                    <a
+                      target="_blank"
+                      href={game.gitHb}
+                      className="w-full py-3 border-2 rounded-xl bg-slate-900 text-white flex items-center justify-center gap-x-2"
+                    >
+                      <img
+                        src={gitIcon}
+                        className="rounded-full w-7"
+                        alt="github icon"
+                      />
+                      Git Hub
+                    </a>
+                    <a
+                      target="_blank"
+                      href={game.netlify}
+                      className="w-full py-3 border-2 rounded-xl bg-cyan-900 text-white flex items-center justify-center"
+                    >
+                      <img
+                        src={netlifyIcon}
+                        className="w-10"
+                        alt="netlify icon"
+                      />
+                      Netlify
+                    </a>
+                  </div>
                 </SwiperSlide>
               );
             })}
