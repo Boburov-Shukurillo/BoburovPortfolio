@@ -13,6 +13,7 @@ export default {
       screens: {
         middleScreen: "900px",
         mini_screen: "500px",
+        1700: "1700px",
       },
     },
   },

@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import telegram from "../assets/telegram.png";
 import hamburgerBtn from "../assets/hamburgerBtn.svg";
-import logo from "../assets/logoDev.svg";
+import logo from "../assets/logo.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -9,14 +9,23 @@ const Header = () => {
   useEffect(() => {
     Aos.init({ duration: "1000" });
   }, []);
+  const [blur, setBlur] = useState();
+  window.onscroll = (e) => {
+    if (window.pageYOffset > 80) {
+      setBlur(true);
+    } else {
+      setBlur(false);
+    }
+  };
   return (
-    <header className="bg-slate-700 py-3 ZingDemo">
-      <div className=" containerb flex items-center justify-between">
+    <header
+      className={`py-3 ${
+        blur ? "backdrop-blur-xl bg-slate-700/80" : ""
+      } myFont w-full z-30 fixed top-0 bg-slate-700 backdrop-blur-xl`}
+    >
+      <div className="containerb flex items-center justify-between h-14">
         <Link className="flex items-center justify-between w-1/2">
-          <img src={logo} alt="logo" className="w-16 h-16 rounded-lg mr-5"  />
-          <h1 className="h-10 text-2xl text-white w-full leading-5">Boburov Shukurillo <br />
-          <span className="text-xl">Fronten React Developer</span>
-          </h1>
+          <h1 className="text-2xl text-white w-full leading-5">Boburov.Dev</h1>
         </Link>
         <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
           <nav className="w-1/4 max-md:hidden">
@@ -24,28 +33,17 @@ const Header = () => {
               <li className="cursor-pointer">
                 <a href="#home">Home</a>
               </li>
-
+              <li className="cursor-pointer">
+                <a href="#about">About</a>
+              </li>
               <li className="cursor-pointer">
                 <a href="#projects">Projects</a>
               </li>
-
               <li className="cursor-pointer">
-                <a href="#skils">Skill</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
-
-          <a
-            href="https://t.me/BoburovSh"
-            className="px-4 py-2 rounded-xl border-2 flex items-center gap-x-5 text-white font-bold hover:opacity-60 transition-all max-md:px-2 max-md:py-2  max-md:text-sm"
-          >
-            <img
-              src={telegram}
-              className="rounded-full w-7 border-2 max-md:w-5"
-              alt="telegram icon"
-            />
-            <span className="max-md:hidden">Telegram</span>
-          </a>
         </div>
         <button className="hidden max-sm:block">
           <img src={hamburgerBtn} className="w-20" alt="" />

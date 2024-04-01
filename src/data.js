@@ -10,6 +10,21 @@ import shadowFighte from "./assets/icons/shadowFight.png";
 export const projects = [
   {
     id: 0,
+    img: Restoran,
+    projectName: "Restoran",
+    position: "left",
+    description:
+      "Restoran website is an online platform that site users can buying foods and drinks and called  this project is fast. ",
+    usingLanguage: ["react", "tailwind"],
+    type: "project",
+    gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
+    netlify: "https://restoran-site.netlify.app/",
+  },
+];
+
+export const games = [
+  {
+    id: 1,
     img: TicTacToe,
     projectName: "Tic Tac Toe Game",
     description:
@@ -19,7 +34,7 @@ export const projects = [
     netlify: "https://tictactoegame2024.netlify.app/",
   },
   {
-    id: 1,
+    id: 2,
     img: FlappyBird,
     projectName: "Flappy Bird",
     description:
@@ -27,16 +42,6 @@ export const projects = [
     usingLanguage: ["html", "css", "js"],
     gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
     netlify: "",
-  },
-  {
-    id: 2,
-    img: Restoran,
-    projectName: "Restoran",
-    description:
-      "This Project createrd in 2 week and I learned axios and othet liberies",
-    usingLanguage: ["html", "css", "js"],
-    gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
-    netlify: "https://restoran-site.netlify.app/",
   },
   {
     id: 3,
@@ -68,6 +73,7 @@ export const projects = [
     gitHb: "https://github.com/Boburov-Shukurillo/Maze-game",
     netlify: "https://maze-game-crator-boburov.netlify.app/",
   },
+
   {
     id: 6,
     img: TextToSpeach,
@@ -79,7 +85,7 @@ export const projects = [
     netlify: "https://boburov-text-to-speach.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     img: shadowFighte,
     projectName: "Shadow Fight Game",
     description:
