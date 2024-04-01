@@ -125,6 +125,7 @@
   height: 50px;
   position: absolute;
   bottom: -5px;
+  filter: brightness(10);
   background-size: cover;
   transform: rotate(180deg);
   cursor: pointer;
@@ -138,6 +139,7 @@
   height: 50px;
   position: absolute;
   bottom: -5px;
+  filter: brightness(10);
   cursor: pointer;
   background-size: cover;
   background-image: url(./assets/arrow.webp);

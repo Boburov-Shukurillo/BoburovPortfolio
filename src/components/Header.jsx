@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <header
       className={`py-3 ${
-        blur ? "backdrop-blur-xl bg-slate-700/80" : ""
-      } myFont w-full z-30 fixed top-0 bg-slate-700 backdrop-blur-xl`}
+        blur ? "backdrop-blur-xl bg-darkenBlue/80" : ""
+      } myFont w-full z-30 fixed top-0 bg-darkenBlue backdrop-blur-xl`}
     >
       <div className="containerb flex items-center justify-between h-14">
         <Link className="flex items-center justify-between w-1/2">

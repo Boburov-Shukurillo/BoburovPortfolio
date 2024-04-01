@@ -19,9 +19,9 @@ const Home = () => {
     Aos.init({ duration: "1000" });
   }, []);
   return (
-    <div className="bg-slate-700">
+    <div className="bg-darkenBlue">
       <div
-        className={`py-40 bg-slate-700  bg-contain bg-center max-1700:bg-cover`}
+        className={`py-40   bg-contain bg-center max-1700:bg-cover`}
         id="home"
         data-aos="fade-in"
       >
@@ -91,7 +91,7 @@ const Home = () => {
 
       <div id="projects">
         <div className="containerb">
-          <h1 className="text-2xl myFont text-blue-300 tracking-widest mb-2">
+          <h1 className="text-2xl myFont text-skyBlue tracking-widest mb-2">
             Projects
           </h1>
           <p className="text-4xl myFont text-white mb-10">
@@ -124,12 +124,12 @@ const Home = () => {
                       <div className="flex flex-wrap gap-5 mb-5">
                         {project.usingLanguage.map((pl, index) => {
                           return (
-                            <h4
+                            <h3
                               key={index}
                               className="myFont text-xl text-white tracking-widest"
                             >
                               #{pl}
-                            </h4>
+                            </h3>
                           );
                         })}
                       </div>

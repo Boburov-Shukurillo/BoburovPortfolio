@@ -16,6 +16,10 @@ export default {
         mini_screen: "500px",
         1700: "1700px",
       },
+      colors: {
+        skyBlue: "#BFDEFD",
+        darkenBlue: "#1D2735",
+      },
     },
   },
   plugins: [],
