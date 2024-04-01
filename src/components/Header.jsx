@@ -38,22 +38,22 @@ const Header = () => {
               <ul className="flex items-center justify-end gap-x-10 text-white font-bold">
                 <li>
                   <span className="cursor-pointer">
-                    <a href="#home">Home</a>
+                    <a href="#home" className="uppercase">Home</a>
                   </span>
                 </li>
                 <li>
                   <span className="cursor-pointer">
-                    <a href="#about">About</a>
+                    <a href="#about" className="uppercase">About</a>
                   </span>
                 </li>
                 <li>
                   <span className="cursor-pointer">
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" className="uppercase">Projects</a>
                   </span>
                 </li>
                 <li>
                   <span className="cursor-pointer">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" className="uppercase">Contact</a>
                   </span>
                 </li>
               </ul>
