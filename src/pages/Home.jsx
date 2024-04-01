@@ -251,15 +251,15 @@ const Home = () => {
 
       <div className="py-10 max-md:hidden">
         <div className="containerb">
-          <ul>
-            <Swiper
-              slidesPerView={3}
-              spaceBetween={50}
-              modules={[Pagination, Navigation]}
-              pagination
-              navigation
-              className="gamesSwiper"
-            >
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={50}
+            modules={[Pagination, Navigation]}
+            pagination
+            navigation
+            className="gamesSwiper"
+          >
+            <ul>
               {games.map((game) => {
                 return (
                   <li key={game.id}>
@@ -304,8 +304,8 @@ const Home = () => {
                   </li>
                 );
               })}
-            </Swiper>
-          </ul>
+            </ul>
+          </Swiper>
         </div>
       </div>
       <Contact />
