@@ -262,8 +262,11 @@ const Home = () => {
             <ul>
               {games.map((game) => {
                 return (
-                  <li key={game.id}>
+                  <li
+                   key={game.id}
+                   >
                     <SwiperSlide
+                     key={game.id}
                       data-aos="fade-in"
                       className="h-96 rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
                     >
