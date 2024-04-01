@@ -24,7 +24,7 @@ const Header = () => {
     <header className="demo">
       <div
         className={`py-3 fixed
-        myFont w-full z-30 bg-[#0e0f15e7] top-0 border-b-2 backdrop-blur-xl z-50`}
+        myFont w-full bg-[#0e0f15e7] top-0 border-b-2 backdrop-blur-xl z-50`}
       >
         <div className="containerb flex items-center justify-between h-14">
           <Link className="flex items-center justify-between w-1/2">

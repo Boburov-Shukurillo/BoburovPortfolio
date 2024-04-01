@@ -3,40 +3,62 @@ import gitHub from "../assets/github.png";
 import telegram from "../assets/telegram.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instalog.png";
+import axios from "axios";
 
 const Contact = () => {
+  const telegram_bot_id = "7071723627:AAH4AeBMChX6KF7tThxth2kPI3IJ4_PxaJY";
+  const chat_id = "6076096557";
+  const salom = () => {
+    axios.post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
+      chat_id,
+      text: "hello",
+    });
+  };
   return (
     <div id="contact" className="bg-darkenBlue py-20">
-      <div className="containerb">
+      <div className="containerb flex items-center justify-center flex-col">
         <h1 className="myFont text-3xl text-white tracking-widest mb-5">
           Connect With Me
         </h1>
-        <form action="" className=" flex justify-between">
+        <form
+          action=""
+          className="w-1/2 flex flex-col items-center gap-10 justify-between"
+        >
           <div className="w-full flex flex-col gap-5 items-center justify-center">
             <div className="w-full flex items-center gap-x-5">
               <input
                 type="text"
                 placeholder="Name"
-                className="w-1/2 h-14 px-5 bg-white/20 placeholder:text-white rounded-xl myFont text-white"
+                required
+                className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl myFont text-white"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-1/2 h-14 px-5 bg-white/20 placeholder:text-white rounded-xl myFont text-white"
+                required
+                className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl myFont text-white"
               />
             </div>
+            <input
+              type="text"
+              required
+              className="w-full h-14 px-5 text-white placeholder:uppercase placeholder:text-white myFont bg-white/20 rounded-xl"
+              placeholder="email"
+              name=""
+              id=""
+            />
             <textarea
               cols="30"
               rows="30"
               placeholder="Write You Quession"
               className="w-full min-h-80 max-h-80 rounded-xl p-10 col-start-1 col-end-3 bg-white/20 text-white myFont"
             ></textarea>
-              <button className="bg-black/75 py-4 w-full hidden max-md:block rounded-lg text-white">
-                Submit Request
-              </button>
+            {/* <button className="bg-black/75 py-4 w-full hidden max-md:block rounded-lg text-white">
+              Submit Request
+            </button> */}
           </div>
-          <div className="w-1/2 px-10 max-md:hidden">
-            <div className="grid grid-cols-1  gap-7 w-3/4">
+          <div className="w-full flex items-center justify-center px-10 max-md:hidden ">
+            <div className="flex items-center   gap-7 w-3/4">
               <a
                 target="_blank"
                 href="https://github.com/Boburov-Shukurillo/"
@@ -45,11 +67,8 @@ const Contact = () => {
                 <img
                   src={gitHub}
                   alt="gitHub png"
-                  className="w-1/4 rounded-full"
+                  className="w-20 rounded-full"
                 />
-                <p className="w-44 truncate myFont text-white">
-                  Boburov-Shukurillo
-                </p>
               </a>
               <a
                 target="_blank"
@@ -59,9 +78,8 @@ const Contact = () => {
                 <img
                   src={telegram}
                   alt="email png"
-                  className="w-1/4 rounded-full"
+                  className="w-20 rounded-full"
                 />
-                <p className="w-44 truncate myFont text-white">BoburovSh</p>
               </a>
               <a
                 target="_blank"
@@ -71,11 +89,8 @@ const Contact = () => {
                 <img
                   src={linkedin}
                   alt="linkedin png"
-                  className="w-1/4 rounded-full"
+                  className="w-20 rounded-full"
                 />
-                <p className="w-44 truncate myFont text-white">
-                  shukurilo-boburov
-                </p>
               </a>
               <a
                 target="_blank"
@@ -85,15 +100,17 @@ const Contact = () => {
                 <img
                   src={instagram}
                   alt="linkedin png"
-                  className="w-1/4 rounded-full"
+                  className="w-20 rounded-full"
                 />
-                <p className="w-44 truncate myFont text-white">boburov.dev</p>
               </a>
-              <button className="bg-black/75 py-4 rounded-lg text-white">
-                Submit Request
-              </button>
             </div>
           </div>
+          <button
+            onClick={salom}
+            className="bg-black/75 w-1/2 py-4 rounded-lg text-white"
+          >
+            Submit Request
+          </button>
         </form>
       </div>
     </div>

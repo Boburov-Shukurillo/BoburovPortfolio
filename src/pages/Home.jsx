@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="bg-darkenBlue">
       <div
-        className={`py-40 bg-contain bg-center max-1700:bg-cover max-md:py-24`}
+        className={`py-20 pt-60 bg-contain bg-center max-1700:bg-cover max-md:py-24`}
         id="home"
         data-aos="fade-in"
       >
@@ -126,7 +126,6 @@ const Home = () => {
                     <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
                       <h2
                         className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl"
-                        data-aos="fade-in"
                       >
                         {project.projectName}
                       </h2>
@@ -185,7 +184,6 @@ const Home = () => {
                     <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
                       <h2
                         className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl"
-                        data-aos="fade-in"
                       >
                         {project.projectName}
                       </h2>
