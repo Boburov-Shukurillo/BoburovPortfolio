@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import gitHub from "../assets/github.png";
 import telegram from "../assets/telegram.png";
 import linkedin from "../assets/linkedin.png";
@@ -6,14 +6,19 @@ import instagram from "../assets/instalog.png";
 import axios from "axios";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [lastNama, setLastName] = useState("");
+  const [quession, setQuession] = useState("");
   const telegram_bot_id = "7071723627:AAH4AeBMChX6KF7tThxth2kPI3IJ4_PxaJY";
   const chat_id = "6076096557";
   const salom = () => {
     axios.post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
       chat_id,
-      text: "hello",
+      text: `👩‍💻 User Name : ${name}\n\n 📋 Last Name : ${lastNama}\n\n 📧 Email : ${email}\n\n  User Request📈${quession}`,
     });
   };
+
   return (
     <div id="contact" className="bg-darkenBlue py-20">
       <div className="containerb flex items-center justify-center flex-col">
@@ -21,7 +26,7 @@ const Contact = () => {
           Connect With Me
         </h1>
         <form
-          action=""
+          onSubmit={salom}
           className="w-1/2 flex flex-col items-center gap-10 justify-between"
         >
           <div className="w-full flex flex-col gap-5 items-center justify-center">
@@ -29,12 +34,16 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Name"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
                 required
                 className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl myFont text-white"
               />
               <input
                 type="text"
                 placeholder="Last Name"
+                onChange={(e) => setLastName(e.target.value)}
+                value={lastNama}
                 required
                 className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl myFont text-white"
               />
@@ -44,18 +53,19 @@ const Contact = () => {
               required
               className="w-full h-14 px-5 text-white placeholder:uppercase placeholder:text-white myFont bg-white/20 rounded-xl"
               placeholder="email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               name=""
               id=""
             />
             <textarea
               cols="30"
               rows="30"
+              onChange={(e) => setQuession(e.target.value)}
+              value={quession}
               placeholder="Write You Quession"
-              className="w-full min-h-80 max-h-80 rounded-xl p-10 col-start-1 col-end-3 bg-white/20 text-white myFont"
+              className="w-full min-h-80 max-h-80 rounded-xl p-5 col-start-1 col-end-3 bg-white/20 text-white myFont"
             ></textarea>
-            {/* <button className="bg-black/75 py-4 w-full hidden max-md:block rounded-lg text-white">
-              Submit Request
-            </button> */}
           </div>
           <div className="w-full flex items-center justify-center px-10 max-md:hidden ">
             <div className="flex items-center   gap-7 w-3/4">
@@ -105,10 +115,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <button
-            onClick={salom}
-            className="bg-black/75 w-1/2 py-4 rounded-lg text-white"
-          >
+          <button className="bg-black/75 w-1/2 py-4 rounded-lg text-white">
             Submit Request
           </button>
         </form>
