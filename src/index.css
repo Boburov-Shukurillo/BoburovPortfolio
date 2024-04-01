@@ -22,9 +22,13 @@
 }
 
 * {
+  user-select: none;
   scroll-behavior: smooth;
 }
 
+*:focus{
+  outline: none;
+}
 .ZingDemo {
   font-weight: 100;
   letter-spacing: 2px;

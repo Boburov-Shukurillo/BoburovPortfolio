@@ -10,6 +10,8 @@ import tailwind from "../assets/tailwind.png";
 import boostrap from "../assets/bootstrap.png";
 import javascript from "../assets/js.png";
 import react from "../assets/react.png";
+import left from '../assets/leaft.png'
+import nodejs from '../assets/nodejs.webp'
 import PortfolioImg from "../assets/portfolioLogo.webp";
 import Contact from "./Contact";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,7 +23,7 @@ const Home = () => {
   return (
     <div className="bg-darkenBlue">
       <div
-        className={`py-40   bg-contain bg-center max-1700:bg-cover`}
+        className={`py-40 bg-contain bg-center max-1700:bg-cover max-md:py-24 mt-20`}
         id="home"
         data-aos="fade-in"
       >
@@ -29,23 +31,23 @@ const Home = () => {
           <img
             src={PortfolioImg}
             alt="portfolio"
-            className="w-2/4 h-1/2 rounded-full object-cover max-sm:w-2/3 hidden max-sm:block mix-blend-color-burn"
+            className="h-52 rounded-xl object-cover max-sm:w-52 hidden max-sm:block mb-5"
           />
-          <div className="w-full max-md:w-4/5 max-sm:text-center flex flex-col gap-y-7">
+          <div className="w-full max-md:w-4/5 max-sm:text-center flex flex-col gap-y-7 max-sm:items-center">
             <h1 className="text-7xl font-bold ZingDemo text-white max-lg:text-4xl max-md:text-3xl max-sm:text-xl">
               Front-End React <br />
               Developer 👋
             </h1>
-            <p className="text-xl text-whiteGray mb-5 myFont w-2/3">
+            <p className="text-xl text-whiteGray mb-5 myFont w-2/3 max-md:w-4/5 max-mini_screen:w-full max-md:text-lg">
               Hi, I'm Boburov Shukurillo. A passionate Frontend React Developer
               based in Chinabod , Uzbekistan📍
             </p>
-            <div className="w-full flex items-center justify-start gap-x-5">
+            <div className="w-full flex items-center justify-start gap-x-5 max-sm:flex-col max-md:gap-0">
               <span className="text-xl tracking-widest text-white myFont">
                 Teach Stack
               </span>
-              <span className="inline-block w-0.5 h-10 bg-whiteGray"></span>
-              <div className="w-1/2 flex justify-start gap-x-10 max-sm:gap-x-1 max-sm:justify-center">
+              <span className="inline-block w-0.5 h-10 max-md:h-24 max-md:mr-5 bg-whiteGray max-sm:w-full max-sm:my-5 max-sm:h-0.5"></span>
+              <div className="w-1/2  flex justify-start gap-5 max-sm:gap-x-1 max-sm:justify-center max-md:flex-wrap max-lg:gap-0 max-md:gap-5 max-md:w-full">
                 <img
                   src={html}
                   alt="html png"
@@ -76,48 +78,59 @@ const Home = () => {
                   alt="html png"
                   className="w-12 h-10 object-contain"
                 />
+                <img
+                  src={nodejs}
+                  alt="html png"
+                  className="w-12 h-10 object-contain"
+                />
+                <img
+                  src={left}
+                  alt="html png"
+                  className="w-12 h-10 object-contain"
+                />
               </div>
             </div>
           </div>
           <img
             src={PortfolioImg}
             alt="portfolio"
-            className="w-96 h-96 rounded-full object-cover max-sm:w-1/2 block max-sm:hidden"
+            className="w-80 h-80 rounded-full object-cover max-sm:w-1/2 block max-sm:hidden"
           />
         </div>
       </div>
 
       {/* <About /> */}
 
-      <div id="projects">
+      <div id="projects" className="mb-20">
         <div className="containerb">
-          <h1 className="text-2xl myFont text-skyBlue tracking-widest mb-2">
+          <h1 className="text-2xl myFont text-skyBlue tracking-widest mb-2 max-md:text-xl">
             Projects
           </h1>
-          <p className="text-4xl myFont text-white mb-10">
+          <p className="text-4xl myFont text-white mb-10 max-md:text-2xl">
             Each project is a unique piece of development 🧩
           </p>
+
           <ul className="flex flex-col items-center gap-y-24">
             {projects.map((project, index) => {
               if (index % 2 == 0) {
                 return (
                   <li
                     key={project.id}
-                    className="flex items-start justify-between gap-x-10 h-96"
+                    className="flex items-start justify-between gap-x-10 h-96 max-md:flex-col max-md:items-center max-md:h-500px"
                   >
                     <img
                       src={project.img}
                       alt={project.projectName + " png"}
-                      className="rounded-xl w-733 object-cover object-right h-full"
+                      className="rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
                     />
-                    <div className="w-1/2 flex flex-col items-center justify-center h-full">
+                    <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
                       <h2
-                        className="text-3xl myFont text-white tracking-widest mb-5"
+                        className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl"
                         data-aos="fade-in"
                       >
                         {project.projectName}
                       </h2>
-                      <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-center">
+                      <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-center max-xl:text-sm max-md:text-xl max-xl:w-full">
                         {project.description}
                       </p>
 
@@ -126,7 +139,7 @@ const Home = () => {
                           return (
                             <h3
                               key={index}
-                              className="myFont text-xl text-white tracking-widest"
+                              className="myFont text-xl text-white tracking-widest max-xl:text-base"
                             >
                               #{pl}
                             </h3>
@@ -134,10 +147,10 @@ const Home = () => {
                         })}
                       </div>
 
-                      <div className="w-full flex items-center justify-center gap-x-5">
+                      <div className="w-full flex items-center justify-center gap-x-5 max-sm:gap-x-2">
                         <a
                           href={project.gitHb}
-                          className="text-white flex items-center justify-center gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black"
+                          className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
                           Code
                           <img
@@ -149,7 +162,7 @@ const Home = () => {
 
                         <a
                           href={project.netlify}
-                          className="text-white flex items-center justify-center gap-x-2 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black"
+                          className="text-white flex items-center justify-evenly gap-x-2 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
                           Live Demo
                           <img
@@ -225,10 +238,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="py-10">
+      <div className="py-10 max-md:hidden">
         <div className="containerb">
           <ul>
-            {" "}
             <Swiper
               slidesPerView={3}
               spaceBetween={50}

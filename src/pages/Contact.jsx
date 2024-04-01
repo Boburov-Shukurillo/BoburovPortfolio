@@ -31,8 +31,11 @@ const Contact = () => {
               placeholder="Write You Quession"
               className="w-full min-h-80 max-h-80 rounded-xl p-10 col-start-1 col-end-3 bg-white/20 text-white myFont"
             ></textarea>
+              <button className="bg-black/75 py-4 w-full hidden max-md:block rounded-lg text-white">
+                Submit Request
+              </button>
           </div>
-          <div className="w-1/2 px-10">
+          <div className="w-1/2 px-10 max-md:hidden">
             <div className="grid grid-cols-1  gap-7 w-3/4">
               <a
                 target="_blank"

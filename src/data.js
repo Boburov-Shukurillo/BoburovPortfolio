@@ -5,12 +5,24 @@ import PintApp from "./assets/icons/PaintApp.png";
 import RockPeaperGame from "./assets/icons/RockPeaperGame.png";
 import MazeGame from "./assets/icons/mazeGame.png";
 import TextToSpeach from "./assets/icons/textspeach.png";
-import QrCode from "./assets/icons/qrcodereader.png";
 import shadowFighte from "./assets/icons/shadowFight.png";
+import second from './assets/icons/beauty_restoran.png'
 export const projects = [
   {
     id: 0,
     img: Restoran,
+    projectName: "Restoran",
+    position: "left",
+    description:
+      "Restoran website is an online platform that site users can buying foods and drinks and called  this project is fast. ",
+    usingLanguage: ["react", "tailwind"],
+    type: "project",
+    gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
+    netlify: "https://restoran-site.netlify.app/",
+  },
+  {
+    id: 1,
+    img: second,
     projectName: "Restoran",
     position: "left",
     description:
