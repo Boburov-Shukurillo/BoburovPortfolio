@@ -20,11 +20,6 @@ const Header = () => {
   };
 
   const [menu, setMenu] = useState("-left-full");
-  const [top, setTop] = useState(0);
-
-  const upTo = () => {
-    window.scrollTo({ top: top, behavior: "smooth" });
-  };
   return (
     <header>
       <div
@@ -35,31 +30,23 @@ const Header = () => {
         <div className="containerb flex items-center justify-between h-14">
           <Link className="flex items-center justify-between w-1/2">
             <h1 className="text-2xl text-white w-full leading-5">
-              <Link to="/"> Boburov.Dev</Link>
+              <Link to='/'> Boburov.Dev</Link>
             </h1>
           </Link>
           <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
             <nav className="w-1/4 max-mini_screen:hidden">
               <ul className="flex items-center justify-end gap-x-10 text-white font-bold">
-                <li onClick={() => setTop(0)}>
-                  <span onClick={upTo} className="cursor-pointer">
-                    Home
-                  </span>
+                <li className="cursor-pointer">
+                  <a href="#home">Home</a>
                 </li>
-                <li onClick={() => setTop(1300)}>
-                  <span onClick={upTo} className="cursor-pointer">
-                    About
-                  </span>
+                <li className="cursor-pointer">
+                  <a href="#about">About</a>
                 </li>
-                <li onClick={() => setTop(2000)}>
-                  <span onClick={upTo} className="cursor-pointer">
-                    Projects
-                  </span>
+                <li className="cursor-pointer">
+                  <a href="#projects">Projects</a>
                 </li>
-                <li onClick={() => setTop(2500)}>
-                  <span onClick={upTo} className="cursor-pointer">
-                    Contact
-                  </span>
+                <li className="cursor-pointer">
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -85,24 +72,16 @@ const Header = () => {
           />
           <ul className="max-w-[500px] flex flex-col items-start justify-end gap-x-10 text-black font-bold gap-y-10 text-2xl py-20">
             <li className="cursor-pointer">
-              <span>
-                <a>Home</a>
-              </span>
+              <a href="#home">Home</a>
             </li>
             <li className="cursor-pointer">
-              <span>
-                <a>About</a>
-              </span>
+              <a href="#about">About</a>
             </li>
             <li className="cursor-pointer">
-              <span>
-                <a>Projects</a>
-              </span>
+              <a href="#projects">Projects</a>
             </li>
             <li className="cursor-pointer">
-              <span>
-                <a>Contact</a>
-              </span>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
