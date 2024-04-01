@@ -10,9 +10,10 @@ import tailwind from "../assets/tailwind.png";
 import boostrap from "../assets/bootstrap.png";
 import javascript from "../assets/js.png";
 import react from "../assets/react.png";
-import PortfolioImg from "../assets/portfolioLogo.jpg";
+import PortfolioImg from "../assets/portfolioLogo.webp";
 import Contact from "./Contact";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: "1000" });
@@ -107,16 +108,16 @@ const Home = () => {
                     <img
                       src={project.img}
                       alt={project.projectName + " png"}
-                      className="rounded-xl w-2/3 h-full"
+                      className="rounded-xl w-733 object-cover object-right h-full"
                     />
-                    <div className="w-1/3 flex flex-col items-start justify-center h-full">
+                    <div className="w-1/2 flex flex-col items-center justify-center h-full">
                       <h2
                         className="text-3xl myFont text-white tracking-widest mb-5"
                         data-aos="fade-in"
                       >
                         {project.projectName}
                       </h2>
-                      <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-justify">
+                      <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-center">
                         {project.description}
                       </p>
 
@@ -226,54 +227,63 @@ const Home = () => {
 
       <div className="py-10">
         <div className="containerb">
-          <ul className="grid grid-cols-3 gap-10 max-xl:grid-cols-3 max-lg:grid-cols-2 max-lg:px-16 max-md:p-0 max-sm:grid-cols-1 max-sm:px-20 max-mini_screen:px-0">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={50}
+            modules={[Pagination, Navigation]}
+            pagination
+            navigation
+            className="gamesSwiper"
+          >
             {games.map((game) => {
               return (
-                <li
-                  data-aos="fade-in"
-                  key={game.id}
-                  className="h-450px rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
-                >
-                  <img
-                    src={game.img}
-                    className="w-full h-1/2 object-cover rounded-lg"
-                    alt={game.projectName + " "}
-                  />
-                  <h3 className="text-2xl font-bold">{game.projectName}</h3>
-                  <p className=" font-semibold">{game.description}</p>
-                  <div className="flex justify-between w-full gap-x-7">
-                    <a
-                      target="_blank"
-                      href={game.gitHb}
-                      className="w-full py-3 border-2 rounded-xl bg-slate-900 text-white flex items-center justify-center gap-x-2"
-                    >
-                      <img
-                        src={gitIcon}
-                        className="rounded-full w-7"
-                        alt="github icon"
-                      />
-                      Git Hub
-                    </a>
-                    <a
-                      target="_blank"
-                      href={game.netlify}
-                      className="w-full py-3 border-2 rounded-xl bg-cyan-900 text-white flex items-center justify-center"
-                    >
-                      <img
-                        src={netlifyIcon}
-                        className="w-10"
-                        alt="netlify icon"
-                      />
-                      Netlify
-                    </a>
-                  </div>
-                </li>
+                <SwiperSlide key={game.id}>
+                  <li
+                    data-aos="fade-in"
+                    key={game.id}
+                    className="h-450px rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
+                  >
+                    <img
+                      src={game.img}
+                      className="w-full h-1/2 object-cover rounded-lg"
+                      alt={game.projectName + " "}
+                    />
+                    <h3 className="text-2xl font-bold">{game.projectName}</h3>
+                    <p className=" font-semibold">{game.description}</p>
+                    <div className="flex justify-between w-full gap-x-7">
+                      <a
+                        target="_blank"
+                        href={game.gitHb}
+                        className="w-full py-3 border-2 rounded-xl bg-slate-900 text-white flex items-center justify-center gap-x-2"
+                      >
+                        <img
+                          src={gitIcon}
+                          className="rounded-full w-7"
+                          alt="github icon"
+                        />
+                        Git Hub
+                      </a>
+                      <a
+                        target="_blank"
+                        href={game.netlify}
+                        className="w-full py-3 border-2 rounded-xl bg-cyan-900 text-white flex items-center justify-center"
+                      >
+                        <img
+                          src={netlifyIcon}
+                          className="w-10"
+                          alt="netlify icon"
+                        />
+                        Netlify
+                      </a>
+                    </div>
+                  </li>
+                </SwiperSlide>
               );
             })}
-          </ul>
+          </Swiper>
         </div>
       </div>
-      <Contact/>
+      <Contact />
     </div>
   );
 };
