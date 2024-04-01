@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 import close from "../assets/close.png";
 import { Link } from "react-router-dom";
 const Header = () => {
-  
   useEffect(() => {
     Aos.init({ duration: "1000" });
   }, []);
@@ -87,22 +86,22 @@ const Header = () => {
           <ul className="max-w-[500px] flex flex-col items-start justify-end gap-x-10 text-black font-bold gap-y-10 text-2xl py-20">
             <li className="cursor-pointer">
               <span>
-                <a href="#home">Home</a>
+                <a>Home</a>
               </span>
             </li>
             <li className="cursor-pointer">
               <span>
-                <a href="#about">About</a>
+                <a>About</a>
               </span>
             </li>
             <li className="cursor-pointer">
               <span>
-                <a href="#projects">Projects</a>
+                <a>Projects</a>
               </span>
             </li>
             <li className="cursor-pointer">
               <span>
-                <a href="#contact">Contact</a>
+                <a>Contact</a>
               </span>
             </li>
           </ul>
