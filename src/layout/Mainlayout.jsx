@@ -6,10 +6,8 @@ window.scrollTo({
 });
 const Mainlayout = () => {
   return (
-    <div className="h-full">
-      <div className="bg-slate-700">
-        <Header />
-      </div>
+    <div className="h-full demo">
+      <Header />
       <main>
         <Outlet />
       </main>

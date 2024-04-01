@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="bg-darkenBlue">
       <div
-        className={`py-40 bg-contain bg-center max-1700:bg-cover max-md:py-24 mt-20`}
+        className={`py-40 bg-contain bg-center max-1700:bg-cover max-md:py-24`}
         id="home"
         data-aos="fade-in"
       >
@@ -153,11 +153,7 @@ const Home = () => {
                           className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
                           Code
-                          <img
-                            src={gitIcon}
-                            className="w-7"
-                            alt="git hub icon"
-                          />
+                          <i className="bx bxl-github text-2xl"></i>
                         </a>
 
                         <a
@@ -216,11 +212,8 @@ const Home = () => {
                           className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
                           Code
-                          <img
-                            src={gitIcon}
-                            className="w-7"
-                            alt="git hub icon"
-                          />
+                          
+                          <i className="bx bxl-github text-2xl"></i>
                         </a>
 
                         <a
@@ -262,13 +255,10 @@ const Home = () => {
             <ul>
               {games.map((game) => {
                 return (
-                  <li
-                   key={game.id}
-                   >
+                  <li key={game.id}>
                     <SwiperSlide
-                     key={game.id}
-                      data-aos="fade-in"
-                      className="h-96 rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
+                      key={game.id}
+                      className="rounded-xl overflow-hidden p-4 border-2 text-white border-white flex flex-col justify-between items-center text-center bg-white/20   transition-all"
                     >
                       <img
                         src={game.img}
