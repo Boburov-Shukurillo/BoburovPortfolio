@@ -16,6 +16,7 @@ import PortfolioImg from "../assets/portfolioLogo.webp";
 import Contact from "./Contact";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import About from "./About";
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: "1000" });
@@ -99,7 +100,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <About /> */}
+      <About />
 
       <div id="projects" className="mb-20">
         <div className="containerb">
