@@ -59,8 +59,7 @@ const Header = () => {
           </div>
 
           <button
-            id="val"
-            value={"menu button"}
+            id="menu"
             onClick={() => setMenu("left-0")}
             className="transition-all hidden max-mini_screen:block"
           >
