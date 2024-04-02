@@ -72,7 +72,7 @@ const Header = () => {
           </div>
 
           <button
-            id="menuBtn"
+            id="menu button"
             onClick={() => setMenu("left-0")}
             className="transition-all hidden max-mini_screen:block"
           >
