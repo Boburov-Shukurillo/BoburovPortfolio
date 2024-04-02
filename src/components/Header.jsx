@@ -1,25 +1,12 @@
 import React, { useEffect, useState } from "react";
 import telegram from "../assets/telegram.png";
 import hamburgerBtn from "../assets/menu.svg";
-import logo from "../assets/logo.jpg";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import close from "../assets/close.png";
 import { Link } from "react-router-dom";
 const Header = () => {
-  useEffect(() => {
-    Aos.init({ duration: "1000" });
-  }, []);
-  const [blur, setBlur] = useState();
-  window.onscroll = (e) => {
-    if (window.pageYOffset > 80) {
-      setBlur(true);
-    } else {
-      setBlur(false);
-    }
-  };
-
   const [menu, setMenu] = useState("-left-full");
+
   return (
     <header className="demo">
       <div
@@ -27,9 +14,9 @@ const Header = () => {
         montserrat-medium w-full bg-[#0e0f15e7] top-0 border-b-2 backdrop-blur-xl z-50`}
       >
         <div className="containerb flex items-center justify-between h-14">
-          <Link className="flex items-center justify-between w-1/2">
+          <Link to="/" className="flex items-center justify-between w-1/2">
             <h1 className="text-2xl text-white w-full leading-5 myFont">
-              <Link to="/">Boburov.Dev</Link>
+              Boburov.Dev
             </h1>
           </Link>
           <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
@@ -73,7 +60,7 @@ const Header = () => {
 
           <button
             id="val"
-            value={'menu button'}
+            value={"menu button"}
             onClick={() => setMenu("left-0")}
             className="transition-all hidden max-mini_screen:block"
           >
