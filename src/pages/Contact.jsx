@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <div id="contact" className="bg-darkenBlue py-20">
       <div className="containerb flex items-center justify-center flex-col">
-        <h1 className="myFont text-3xl text-white tracking-widest mb-5">
+        <h1 className="montserrat-medium text-3xl text-white tracking-widest mb-5">
           Connect With Me
         </h1>
         <form
@@ -37,7 +37,7 @@ const Contact = () => {
                 onChange={(e) => setName(e.target.value)}
                 value={name}
                 required
-                className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl myFont text-white"
+                className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl montserrat-medium text-white"
               />
               <input
                 type="text"
@@ -45,18 +45,16 @@ const Contact = () => {
                 onChange={(e) => setLastName(e.target.value)}
                 value={lastNama}
                 required
-                className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl myFont text-white"
+                className="w-1/2 h-14 px-5 bg-white/20  placeholder:text-white rounded-xl montserrat-medium text-white"
               />
             </div>
             <input
               type="text"
               required
-              className="w-full h-14 px-5 text-white placeholder:uppercase placeholder:text-white myFont bg-white/20 rounded-xl"
+              className="w-full h-14 px-5 text-white placeholder:uppercase placeholder:text-white montserrat-medium bg-white/20 rounded-xl"
               placeholder="email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
-              name=""
-              id=""
             />
             <textarea
               cols="30"
@@ -64,11 +62,11 @@ const Contact = () => {
               onChange={(e) => setQuession(e.target.value)}
               value={quession}
               placeholder="Write You Quession"
-              className="w-full min-h-80 max-h-80 rounded-xl p-5 col-start-1 col-end-3 bg-white/20 text-white myFont"
+              className="w-full min-h-80 max-h-80 rounded-xl p-5 col-start-1 col-end-3 bg-white/20 text-white montserrat-medium"
             ></textarea>
           </div>
           <div className="w-full flex items-center justify-center px-10 max-md:hidden ">
-            <div className="flex items-center   gap-7 w-3/4">
+            <div className="flex items-center gap-7 w-1/2">
               <a
                 target="_blank"
                 href="https://github.com/Boburov-Shukurillo/"
@@ -115,7 +113,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <button className="bg-black/75 w-1/2 py-4 rounded-lg text-white">
+          <button className="bg-black/75 w-1/2 py-4 rounded-lg text-white montserrat-medium">
             Submit Request
           </button>
         </form>

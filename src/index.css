@@ -48,13 +48,11 @@
   scroll-behavior: smooth;
 }
 
-.font {
-  font-family: "Montserrat", sans-serif;
-}
 
 *:focus {
   outline: none;
 }
+
 .ZingDemo {
   font-weight: 100;
   letter-spacing: 2px;
@@ -72,39 +70,6 @@
     url(./assets/bg.png);
 }
 
-.imgd {
-  border: 3px solid white;
-  backdrop-filter: blur(10px);
-  /* animation: shine 5s infinite; */
-}
-
-@keyframes shine {
-  0% {
-    border-radius: 90% 50% 50% 90% / 90% 30% 30% 50%;
-  }
-  25% {
-    border-radius: 50% 70% 50% 60% / 80% 50% 30% 80%;
-  }
-  50% {
-    border-radius: 90% 50% 50% 90% / 90% 30% 30% 50%;
-  }
-  75% {
-    border-radius: 50% 70% 50% 60% / 80% 50% 30% 80%;
-  }
-  100% {
-    transform: rotate();
-    border-radius: 90% 50% 50% 90% / 90% 30% 30% 50%;
-  }
-}
-
-.salom::before {
-  width: 70%;
-  height: 100%;
-  content: "";
-  border-radius: 0 10px 10px 0;
-  background-color: slategray;
-}
-
 .gamesSwiper {
   width: 100%;
   display: flex;
@@ -118,7 +83,7 @@
 }
 
 .gamesSwiper .swiper-slide {
-  height: 500px;
+  height: 450px;
 }
 
 .gamesSwiper .swiper-pagination {
