@@ -58,12 +58,12 @@ const Header = () => {
             </nav>
           </div>
 
-          <button
-            id="menu"
+          <img
+            src={hamburgerBtn}
             onClick={() => setMenu("left-0")}
-            className="transition-all hidden max-mini_screen:block w-32 h-12 menu"
-          >
-          </button>
+            className="transition-all hidden max-mini_screen:block w-32 h-12"
+            alt="menu buton"
+          />
         </div>
       </div>
       <div
