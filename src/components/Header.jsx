@@ -61,9 +61,8 @@ const Header = () => {
           <button
             id="menu"
             onClick={() => setMenu("left-0")}
-            className="transition-all hidden max-mini_screen:block"
+            className="transition-all hidden max-mini_screen:block w-32 h-12 menu"
           >
-            <img src={hamburgerBtn} className="w-20" alt="" />
           </button>
         </div>
       </div>

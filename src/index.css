@@ -140,6 +140,11 @@
   z-index: 30;
 }
 
-.demo {
+/* .demo {
   background-color: #0e0f15;
+} */
+
+.menu{
+  background-size: cover;
+  background-image: url(./assets/menu.svg);
 }
