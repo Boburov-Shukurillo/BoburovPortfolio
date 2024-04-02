@@ -46,7 +46,6 @@ const Header = () => {
                 <li>
                   <a
                     className="cursor-pointer text-white font-medium"
-                    href="#about"
                   >
                     About
                   </a>
