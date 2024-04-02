@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import telegram from "../assets/telegram.png";
-import hamburgerBtn from "../assets/hamburgerBtn.svg";
+import hamburgerBtn from "../assets/menu.svg";
 import logo from "../assets/logo.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
