@@ -21,6 +21,11 @@ export default {
         darkenBlue: "#0e0f15",
         whiteGray: "#C8CBCB",
       },
+      fontFamily:{
+        monoLigth:"montserrat-light",
+        monoMedium:"montserrat-medium",
+        monoBold:"montserrat-bold",
+      }
     },
   },
   plugins: [],

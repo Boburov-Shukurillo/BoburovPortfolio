@@ -17,6 +17,28 @@
 }
 
 @font-face {
+  font-family: monLight;
+  src: url(./fonFamily/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: monMedium;
+  src: url(./fonFamily/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: monBold;
+  src: url(./fonFamily/Montserrat-Bold.ttf);
+}
+.montserrat-light {
+  font-family: monLight;
+}
+.montserrat-medium {
+  font-family: monMedium;
+}
+.montserrat-bold {
+  font-family: monBold;
+}
+
+@font-face {
   font-family: zingDemo;
   src: url(./fonFamily/ZingRust.ttf);
 }

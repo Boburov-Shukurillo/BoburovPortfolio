@@ -38,7 +38,7 @@ const Home = () => {
               Front-End React <br />
               Developer 👋
             </h1>
-            <p className="text-xl text-whiteGray mb-5 myFont w-2/3 max-md:w-4/5 max-mini_screen:w-full max-md:text-lg">
+            <p className="text-xl text-whiteGray mb-5 montserrat-light   w-2/3 max-md:w-4/5 max-mini_screen:w-full max-md:text-lg monstera">
               Hi, I'm Boburov Shukurillo. A passionate Frontend React Developer
               based in Chinabod , Uzbekistan📍
             </p>
@@ -124,9 +124,7 @@ const Home = () => {
                       className="rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
                     />
                     <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
-                      <h2
-                        className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl"
-                      >
+                      <h2 className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl">
                         {project.projectName}
                       </h2>
                       <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-center max-xl:text-sm max-md:text-xl max-xl:w-full">
@@ -152,7 +150,7 @@ const Home = () => {
                           className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
                           Code
-                          <i className="bx bxl-github text-2xl"></i>
+                          <img src={gitIcon} alt="git icon" className="h-1/2" />
                         </a>
 
                         <a
@@ -182,9 +180,7 @@ const Home = () => {
                       className="hidden max-md:block rounded-xl w-733 h-96 object-cover object-right max-xl:w-2/3 max-md:w-full max-md:mb-5"
                     />
                     <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
-                      <h2
-                        className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl"
-                      >
+                      <h2 className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl">
                         {project.projectName}
                       </h2>
                       <p className="text-lg font-mono font-semibold text-slate-400 mb-7 text-center max-xl:text-sm max-md:text-xl max-xl:w-full">
@@ -210,8 +206,7 @@ const Home = () => {
                           className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
                           Code
-                          
-                          <i className="bx bxl-github text-2xl"></i>
+                          <img src={gitIcon} alt="git icon" className="h-1/2" />
                         </a>
 
                         <a

@@ -24,7 +24,7 @@ const Header = () => {
     <header className="demo">
       <div
         className={`py-3 fixed
-        myFont w-full bg-[#0e0f15e7] top-0 border-b-2 backdrop-blur-xl z-50`}
+        montserrat-medium w-full bg-[#0e0f15e7] top-0 border-b-2 backdrop-blur-xl z-50`}
       >
         <div className="containerb flex items-center justify-between h-14">
           <Link className="flex items-center justify-between w-1/2">
@@ -34,7 +34,7 @@ const Header = () => {
           </Link>
           <div className="w-full flex items-center justify-end gap-x-20 max-md:justify-end max-md:mr-5">
             <nav className="w-1/4 max-mini_screen:hidden">
-              <ul className="flex items-center justify-end gap-x-10 text-white font font-medium">
+              <ul className="flex items-center justify-end gap-x-10 text-white font-medium">
                 <li className="cursor-pointer">
                   <a href="#home">Home</a>
                 </li>
