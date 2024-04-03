@@ -15,7 +15,7 @@ const Contact = () => {
   const salom = () => {
     axios.post(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
       chat_id,
-      text: `👩‍💻 User Name : ${name}\n\n 📋 Last Name : ${lastNama}\n\n 📧 Email : ${email}\n\n  User Request📈${quession}`,
+      text: `https://boburov-shukurillo-porfolio.netlify.app a new person has arrived in your portfolio:\n\n👩‍💻 User Name : ${name}\n\n 📋 Last Name : ${lastNama}\n\n 📧 Email : ${email}\n\n  User Request📈${quession}`,
     });
   };
 
