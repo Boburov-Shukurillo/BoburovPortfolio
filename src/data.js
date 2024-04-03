@@ -6,7 +6,8 @@ import RockPeaperGame from "./assets/icons/RockPeaperGame.png";
 import MazeGame from "./assets/icons/mazeGame.png";
 import TextToSpeach from "./assets/icons/textspeach.png";
 import shadowFighte from "./assets/icons/shadowFight.png";
-import second from './assets/icons/beauty_restoran.png'
+import restoranB from "./assets/icons/beauty_restoran.png";
+import second from "./assets/icons/xsweat.png";
 export const projects = [
   {
     id: 0,
@@ -23,6 +24,18 @@ export const projects = [
   {
     id: 1,
     img: second,
+    projectName: "xSweat",
+    position: "left",
+    description:
+      "Xsweat that website is an online and that site users can buys clothes, shoes and aksesuars ",
+    usingLanguage: ["react", "tailwind"],
+    type: "project",
+    gitHb: "https://github.com/Boburov-Shukurillo/XSWEAT",
+    netlify: "https://restoran-site.netlify.app/",
+  },
+  {
+    id: 2,
+    img: restoranB,
     projectName: "Restoran",
     position: "left",
     description:

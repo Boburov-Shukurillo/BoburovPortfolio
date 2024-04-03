@@ -27,7 +27,7 @@ const Contact = () => {
         </h1>
         <form
           onSubmit={salom}
-          className="w-1/2 flex flex-col items-center gap-10 justify-between"
+          className="w-1/2 flex flex-col items-center gap-10 justify-between max-sm:w-full"
         >
           <div className="w-full flex flex-col gap-5 items-center justify-center">
             <div className="w-full flex items-center gap-x-5">
@@ -113,7 +113,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <button className="bg-black/75 w-1/2 py-4 rounded-lg text-white montserrat-medium">
+          <button className="bg-black/75 w-1/2 py-4 rounded-lg text-white montserrat-medium max-sm:w-full">
             Submit Request
           </button>
         </form>

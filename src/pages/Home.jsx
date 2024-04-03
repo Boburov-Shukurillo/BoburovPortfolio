@@ -12,7 +12,7 @@ import javascript from "../assets/js.png";
 import react from "../assets/react.png";
 import left from "../assets/leaft.png";
 import nodejs from "../assets/nodejs.webp";
-import PortfolioImg from "../assets/portfolioLogo.webp";
+import PortfolioImg from "../assets/portfolioLogo.jpg";
 import Contact from "./Contact";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <div className="bg-darkenBlue">
       <div
-        className={`py-20 pt-60 bg-contain bg-center max-1700:bg-cover max-md:py-24`}
+        className={`py-20 pt-60 bg-contain bg-center max-1700:bg-cover max-md:py-24 max-md:pt-32`}
         id="home"
         data-aos="fade-in"
       >
@@ -34,12 +34,12 @@ const Home = () => {
             alt="portfolio"
             className="h-52 rounded-xl object-cover max-sm:w-52 hidden max-sm:block mb-5"
           />
-          <div className="w-full max-md:w-4/5 max-sm:text-center flex flex-col gap-y-7 max-sm:items-center">
-            <h1 className="text-7xl font-bold ZingDemo text-white max-lg:text-4xl max-md:text-3xl max-sm:text-xl">
+          <div className="w-full max-md:w-4/5 max-sm:text-center flex flex-col gap-y-7 max-sm:items-center max-sm:gap-y-3">
+            <h1 className="text-7xl font-bold ZingDemo text-white max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
               Front-End React <br />
               Developer 👋
             </h1>
-            <p className="text-xl text-whiteGray mb-5 montserrat-light   w-2/3 max-md:w-4/5 max-mini_screen:w-full max-md:text-lg monstera">
+            <p className="text-xl text-whiteGray mb-5 montserrat-light   w-2/3 max-md:w-4/5 max-mini_screen:w-full max-md:text-base monstera">
               Hi, I'm Boburov Shukurillo. A passionate Frontend React Developer
               based in Chinabod , Uzbekistan📍
             </p>
@@ -48,7 +48,7 @@ const Home = () => {
                 Teach Stack
               </span>
               <span className="inline-block w-0.5 h-10 max-md:h-24 max-md:mr-5 bg-whiteGray max-sm:w-full max-sm:my-5 max-sm:h-0.5"></span>
-              <div className="w-1/2  flex justify-start gap-5 max-sm:gap-x-1 max-sm:justify-center max-md:flex-wrap max-lg:gap-0 max-md:gap-5 max-md:w-full">
+              <div className="w-1/2  flex justify-start gap-5 max-sm:gap-x-1 max-sm:justify-center max-lg:flex-wrap max-lg:gap-0 max-md:gap-5 max-md:w-full">
                 <img
                   src={html}
                   alt="html png"
