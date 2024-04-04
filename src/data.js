@@ -7,7 +7,8 @@ import MazeGame from "./assets/icons/mazeGame.png";
 import TextToSpeach from "./assets/icons/textspeach.png";
 import shadowFighte from "./assets/icons/shadowFight.png";
 import restoranB from "./assets/icons/beauty_restoran.png";
-import second from "./assets/icons/xsweat.png";
+import xSweat from "./assets/icons/xsweat.png";
+import crypto from "./assets/icons/cryptoTRacker.png";
 export const projects = [
   {
     id: 0,
@@ -23,7 +24,7 @@ export const projects = [
   },
   {
     id: 1,
-    img: second,
+    img: xSweat,
     projectName: "xSweat",
     position: "left",
     description:
@@ -44,6 +45,18 @@ export const projects = [
     type: "project",
     gitHb: "https://github.com/Boburov-Shukurillo/Tic Tac Toe",
     netlify: "https://restoran-site.netlify.app/",
+  },
+  {
+    id: 3,
+    img: crypto,
+    projectName: "Crypto Tracker",
+    position: "left",
+    description:
+      "Restoran website is an online platform that site users can buying foods and drinks and called  this project is fast. ",
+    usingLanguage: ["react", "tailwind"],
+    type: "project",
+    gitHb: "https://github.com/Boburov-Shukurillo/Crypto-Tracker",
+    netlify: "https://github.com/Boburov-Shukurillo/Crypto-Tracker",
   },
 ];
 
