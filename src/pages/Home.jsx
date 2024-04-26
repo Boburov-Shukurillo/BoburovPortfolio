@@ -29,11 +29,6 @@ const Home = () => {
         data-aos="fade-in"
       >
         <div className="containerb flex items-center justify-between max-sm:flex-col">
-          <img
-            src={PortfolioImg}
-            alt="portfolio"
-            className="h-52 rounded-xl object-cover max-sm:w-52 hidden max-sm:block mb-5"
-          />
           <div className="w-full max-md:w-4/5 max-sm:text-center flex flex-col gap-y-7 max-sm:items-center max-sm:gap-y-3">
             <h1 className="text-7xl font-bold ZingDemo text-white max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">
               Front-End React <br />
@@ -117,13 +112,14 @@ const Home = () => {
                 return (
                   <li
                     key={project.id}
-                    className="flex items-start justify-between gap-x-10 h-96 max-md:flex-col max-md:items-center max-md:h-500px"
+                    className="flex items-start justify-between gap-x-10 h-96 max-md:flex-col max-md:items-center max-md:h-500px max-lg:items-center"
                   >
                     <img
                       src={project.img}
                       alt={project.projectName + " png"}
-                      className="rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5"
+                      className="rounded-xl w-733 object-cover object-right h-full max-xl:w-2/3 max-md:w-full max-md:mb-5 max-lg:h-72 max-lg:w-500"
                     />
+                    
                     <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
                       <h2 className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl">
                         {project.projectName}
@@ -149,6 +145,7 @@ const Home = () => {
                         <a
                           href={project.gitHb}
                           className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
+                          target="_blank"
                         >
                           Code
                           <img src={gitIcon} alt="git icon" className="h-1/2" />
@@ -157,6 +154,7 @@ const Home = () => {
                         <a
                           href={project.netlify}
                           className="text-white flex items-center justify-evenly gap-x-2 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
+                          target="_blank"
                         >
                           Live Demo
                           <img
@@ -178,7 +176,7 @@ const Home = () => {
                     <img
                       src={project.img}
                       alt={project.projectName + " png"}
-                      className="hidden max-md:block rounded-xl w-733 h-96 object-cover object-right max-xl:w-2/3 max-md:w-full max-md:mb-5"
+                      className="hidden max-md:block rounded-xl w-733 h-96 object-cover object-right max-xl:w-2/3 max-md:w-full max-md:mb-5 max-lg:h-72 max-lg:w-500"
                     />
                     <div className="w-1/2 flex flex-col items-center justify-center h-full max-md:w-full">
                       <h2 className="text-3xl myFont text-white tracking-widest mb-5 max-xl:text-xl">
@@ -203,6 +201,7 @@ const Home = () => {
 
                       <div className="w-full flex items-center justify-center gap-x-5 max-sm:gap-x-2">
                         <a
+                        target="_blank"
                           href={project.gitHb}
                           className="text-white flex items-center justify-evenly gap-x-5 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
@@ -211,6 +210,7 @@ const Home = () => {
                         </a>
 
                         <a
+                        target="_blank"
                           href={project.netlify}
                           className="text-white flex items-center justify-evenly gap-x-2 px-5 h-14 border-2 rounded-xl w-40 text-base myFont backdrop-blur-lg bg-white/20 stroke-black max-xl:w-20  max-xl:text-sm max-xl:gap-x-0 max-md:w-full max-mini_screen:text-sm"
                         >
