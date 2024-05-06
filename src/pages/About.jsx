@@ -7,7 +7,7 @@ const About = () => {
       className="text-white containerb flex flex-col justify-between items-center"
     >
       <h1 className="montserrat-medium text-4xl tracking-widest self-start mb-10 max-md:self-center max-md:mb-2">
-        About
+        About me
       </h1>
       <div className="flex mb-20 gap-x-20 items-center justify-center">
         <div className="w-full py-1 max-md:hidden">
